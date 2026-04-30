@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<robot name="ball_bounce_x_2-0">
+  <link name="base">
+    <visual>
+      <geometry>
+        <mesh filename="ball_bounce_x_2-0.obj" scale="1 1 1"/>
+      </geometry>
+      <material name="gray">
+        <color rgba="0.5 0.5 0.5 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="ball_bounce_x_2-0.obj" scale="1 1 1"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.000"/>
+      <inertia
+          ixx="0.017517" ixy="0.000000" ixz="0.000000"
+          iyy="0.017517" iyz="0.000000"
+          izz="0.017334"/>
+      <origin xyz="0.000000 -2.008746 0.264837" rpy="0 0 0"/>
+    </inertial>
+  </link>
+</robot>

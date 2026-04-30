@@ -1,0 +1,12 @@
+sim_output/
+__pycache__/
+**._**
+**.pyc
+docker_images/
+kubric_cache/cycles_kernels/**
+_*
+**.DS_Store
+simulation_batch_*
+video_gen_array_*
+CLAUDE.md
+.claude/

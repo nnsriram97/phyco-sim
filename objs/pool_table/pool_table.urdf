@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<robot name="pool_table">
+  <link name="base">
+    <visual>
+      <geometry>
+        <mesh filename="pool_table.obj" scale="1 1 1"/>
+      </geometry>
+      <material name="gray">
+        <color rgba="0.5 0.5 0.5 1.0"/>
+      </material>
+    </visual>
+    <collision concave="yes">
+      <geometry>
+        <mesh filename="pool_table.obj" scale="1 1 1"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.000"/>
+      <inertia
+          ixx="0.238376" ixy="0.000000" ixz="0.000000"
+          iyy="0.618538" iyz="0.000000"
+          izz="0.743001"/>
+      <origin xyz="0.000000 0.000000 0.412686" rpy="0 0 0"/>
+    </inertial>
+  </link>
+</robot>

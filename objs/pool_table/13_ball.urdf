@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<robot name="13_ball">
+  <link name="base">
+    <visual>
+      <geometry>
+        <mesh filename="13_ball.obj" scale="1 1 1"/>
+      </geometry>
+      <material name="gray">
+        <color rgba="0.5 0.5 0.5 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <mesh filename="13_ball.obj" scale="1 1 1"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.000"/>
+      <inertia
+          ixx="0.001035" ixy="0.000000" ixz="0.000000"
+          iyy="0.001032" iyz="0.000000"
+          izz="0.001032"/>
+      <origin xyz="-0.086861 0.117029 0.833097" rpy="0 0 0"/>
+    </inertial>
+  </link>
+</robot>
