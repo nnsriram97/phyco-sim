@@ -1,14 +1,16 @@
-# PhyCo-Sim
+# PhyCo-Sim (Unofficial)
 
-Simulation data generation pipeline for [**PhyCo: Learning Controllable Physical Priors for Generative Motion**](https://phyco-video.github.io/) (CVPR 2026).
+An **unofficial** implementation of the simulation data generation pipeline described in [**PhyCo: Learning Controllable Physical Priors for Generative Motion**](https://phyco-video.github.io/) (CVPR 2026).
 
-PhyCo-Sim generates annotated physics simulation videos with precise control over physical properties — friction, restitution, deformation, and applied forces. It extends [Kubric](https://github.com/google-research/kubric) with soft body simulation, force application, texture randomization, and rich per-frame metadata export.
+> **Disclaimer.** This repository is an independent, unofficial reimplementation provided for research and educational use. It is not the official codebase associated with the paper, and it is not endorsed by or affiliated with the paper's authors or their institutions.
+
+This pipeline generates annotated physics simulation videos with control over physical properties — friction, restitution, deformation, and applied forces. It extends [Kubric](https://github.com/google-research/kubric) with soft body simulation, force application, texture randomization, and rich per-frame metadata export.
 
 <div align="center">
   <img src="assets/phyco-sim.gif" width="70%" alt="Example simulation outputs showing friction, restitution, deformation, and force scenarios"/>
 </div>
 
-The released [**PhyCo-Sim dataset**](https://huggingface.co/datasets/nnsriram97/phyco_kubric) on HuggingFace contains ~27.5 GB of videos generated with this pipeline.
+A companion [dataset on HuggingFace](https://huggingface.co/datasets/nnsriram97/phyco_kubric) (~27.5 GB) contains videos generated with this unofficial pipeline.
 
 ---
 
@@ -275,10 +277,13 @@ Set `KUBRIC_USE_GPU=true` (the launchers already do). Persist the Cycles kernel 
 If you find PhyCo-Sim useful in your research, please cite:
 ```bibtex
 @inproceedings{narayanan2026phyco,
-    title={PhyCo: Learning Controllable Physical Priors for Generative Motion},
-    author={Narayanan, Sriram and Jiang, Ziyu and Narasimhan, Srinivasa G. and Chandraker, Manmohan},
-    booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-    year={2026}
+  title     = {PhyCo: Learning Controllable Physical Priors for Generative Motion},
+  author    = {Narayanan, Sriram and Jiang, Ziyu and Narasimhan, Srinivasa G. and Chandraker, Manmohan},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year      = {2026},
+  eprint    = {2604.28169},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CV}
 }
 ```
 
