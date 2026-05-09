@@ -2,7 +2,7 @@
 
 An **unofficial** implementation of the simulation data generation pipeline described in [**PhyCo: Learning Controllable Physical Priors for Generative Motion**](https://phyco-video.github.io/) (CVPR 2026).
 
-> **Disclaimer.** This repository is an independent, unofficial reimplementation provided for research and educational use. It is not the official codebase associated with the paper, and it is not endorsed by or affiliated with the paper's authors or their institutions.
+> **Disclaimer.** This repository is an independent, unofficial reimplementation provided for research and educational use. It is not the official codebase associated with the paper, and it is not endorsed by or affiliated with the authors institutions.
 
 This pipeline generates annotated physics simulation videos with control over physical properties — friction, restitution, deformation, and applied forces. It extends [Kubric](https://github.com/google-research/kubric) with soft body simulation, force application, texture randomization, and rich per-frame metadata export.
 
